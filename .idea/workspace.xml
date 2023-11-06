@@ -4,17 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84bbdead-232b-4bc5-8344-aa4846db85d6" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-application/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-application/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-infrastructure/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-infrastructure/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-interface/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot-api-interface/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot-api-interface/src/test/java/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interface/src/test/java/test/ApiTest.java" afterDir="false" />
+    <list default="true" id="84bbdead-232b-4bc5-8344-aa4846db85d6" name="Changes" comment="api">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/ai/IOpenAI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/ai/model/aggregates/AIAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/ai/model/vo/Choices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/ai/service/OpenAI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/IZsxqApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/aggregates/UnAnsweredQuestionsAggregates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/req/AnswerReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/req/ReqData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/res/AnswerRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/res/RespData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/OwnerDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Questionee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Root.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Talk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/Topics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/model/vo/User_specific.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/service/ZsxqApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatbot-api-interface/src/test/java/cn/bugstack/chatbot/api/test/SpringBootRunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interface/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interface/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot-api-interface/src/test/java/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-api-interface/src/test/java/cn/bugstack/chatbot/api/test/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +41,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="23_fyj_zsxq_api" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -70,22 +101,25 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/ProjectCode",
+    "last_opened_file_path": "G:/LeetCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "E:/ProjectCode/chatbot-api-infrastructure/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "dba837edd05547d3b6b14b7f500754c1",
+    "spring.configuration.checksum": "101980ac6a4103666db68c6b272dfc7c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ProjectCode\chatbot-api-domain\src\main\java\cn\bugstack\chatbot\api\domain\zsxq\model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ProjectCode" />
     </key>
@@ -123,6 +157,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_chatGPT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chatbot-api-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.chatbot.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.chatbot.api.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.chatbot.api.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_chatGPT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootRunTest.test_openAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chatbot-api-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.chatbot.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.chatbot.api.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.chatbot.api.test.SpringBootRunTest" />
+      <option name="METHOD_NAME" value="test_openAi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="chatbot-api-infrastructure" />
       <method v="2">
@@ -151,9 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTest.answer" />
-        <item itemvalue="JUnit.ApiTest.query_unanswered_questions" />
         <item itemvalue="Spring Boot.ApiApplication" />
+        <item itemvalue="JUnit.ApiTest.query_unanswered_questions" />
+        <item itemvalue="JUnit.ApiTest.answer" />
+        <item itemvalue="JUnit.ApiTest.test_chatGPT" />
+        <item itemvalue="JUnit.SpringBootRunTest.test_openAi" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +239,15 @@
       <workItem from="1697719419022" duration="16000" />
       <workItem from="1697719457120" duration="2862000" />
       <workItem from="1697722338086" duration="8994000" />
-      <workItem from="1698326682166" duration="1199000" />
+      <workItem from="1698326682166" duration="1867000" />
+      <workItem from="1698571452641" duration="517000" />
+      <workItem from="1698571989091" duration="13396000" />
+      <workItem from="1698664020069" duration="3139000" />
+      <workItem from="1698667167480" duration="1934000" />
+      <workItem from="1698669110746" duration="4829000" />
+      <workItem from="1698800176829" duration="3716000" />
+      <workItem from="1698898887648" duration="6522000" />
+      <workItem from="1698975062144" duration="8967000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -181,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697724364027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="api">
+      <option name="closed" value="true" />
+      <created>1698570926693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698570926693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +284,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="api" />
+    <option name="LAST_COMMIT_MESSAGE" value="api" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -227,6 +312,11 @@
           <url>file://$PROJECT_DIR$/chatbot-api-infrastructure/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chatbot-api-domain/src/main/java/cn/bugstack/chatbot/api/domain/zsxq/service/ZsxqApi.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

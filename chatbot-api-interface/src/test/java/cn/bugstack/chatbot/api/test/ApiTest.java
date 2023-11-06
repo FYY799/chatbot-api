@@ -1,5 +1,7 @@
-package test;
+package cn.bugstack.chatbot.api.test;
 
+import org.apache.http.HttpHost;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
@@ -11,6 +13,7 @@ import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.apache.http.client.methods.HttpGet;
 import java.io.IOException;
+
 
 public class ApiTest {
     @Test
@@ -67,6 +70,43 @@ public class ApiTest {
         }
     }
 
+    @Test
+    public void test_chatGPT() throws IOException {
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        HttpPost post = new HttpPost("https://api.openai.com/v1/chat/completions");
+
+//        HttpHost proxy = new HttpHost("10.1.200.95", 3128, "http");
+//        // 设置请求和传输超时时间
+//        RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(2000).setConnectTimeout(2000).setProxy(proxy).build();
+//        post.setConfig(requestConfig);
+
+        //Http请求中的附加信息
+        post.addHeader("cookie","zsxq_access_token=3AA27790-3C39-D94E-1ACC-D93DC08F4BF4_FB49C5E872E8D1AE; zsxqsessionid=2e4a4892af4296221c117821297a9a7f; abtest_env=product");
+        post.addHeader("Content-Type","application/json");
+        post.addHeader("Authorization","Bearer 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");
+
+        String paramJson = "{\n" +
+                "     \"model\": \"gpt-3.5-turbo\",\n" +
+                "     \"messages\": [{\"role\": \"user\", \"content\": \"帮我写出反转链表的算法\"}],\n" +
+                "     \"temperature\": 0.7\n" +
+                "   }";
+
+        StringEntity stringEntity = new StringEntity(paramJson, ContentType.create("text/json", "UTF-8"));
+
+        post.setEntity(stringEntity);
+
+        CloseableHttpResponse response = httpClient.execute(post);
+
+        if(response.getStatusLine().getStatusCode() == HttpStatus.SC_OK){
+            String res = EntityUtils.toString(response.getEntity());
+            System.out.println(res);
+        }
+        else{
+            System.out.println(response.getStatusLine().getStatusCode());
+        }
+
+
+    }
 
 
 }
